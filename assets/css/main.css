@@ -2566,7 +2566,7 @@ input, select, textarea {
 
 		ul.items {
 			list-style: none;
-			padding-left: 0;
+			padding-left: 60%;
 		}
 
 			ul.items > li {
@@ -3881,3 +3881,13 @@ input, select, textarea {
 		}
 
 	}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	padding-left: 70%;
+}
+
+#gif{
+	padding-left: 60%;
+}
