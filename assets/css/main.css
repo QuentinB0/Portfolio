@@ -4017,6 +4017,13 @@ footer {
 	background-color: #FFEFD5;
 }
 
+#guillaume{
+	display: flex;
+	justify-content: center;
+	margin-top: -5%;
+	margin-bottom: -15%;
+}
+
 @media only screen and (max-width: 768px) {
 	footer {
 		display: flex;
@@ -4028,6 +4035,13 @@ footer {
 	
 		#gif {
 			display: none;
+		}
+
+		#guillaume{
+			display: flex;
+			justify-content: center;
+			margin-top: -7%;
+			margin-bottom: -25%;
 		}
 	}	
 
@@ -4042,4 +4056,12 @@ footer {
 	#gif {
 		display: none;
 	}
+
+	#guillaume{
+		display: flex;
+		justify-content: center;
+		margin-top: -5%;
+		margin-bottom: -50%;
+	}
 }
+
