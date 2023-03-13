@@ -3680,6 +3680,7 @@ ul.feature-icons li:nth-child(2) {
 		padding: 0;
 		text-align: left;
 		width: 100%;
+		margin-top: -5%;
 	}
 
 	#wrapper section>header ul.actions {
@@ -4060,8 +4061,8 @@ footer {
 	#guillaume{
 		display: flex;
 		justify-content: center;
+		margin-bottom: -100%;
 		margin-top: -5%;
-		margin-bottom: -50%;
 	}
 }
 
