@@ -4028,6 +4028,10 @@ footer {
 	margin-bottom: -15%;
 }
 
+#wrapper > section:nth-child(4) > div > section:nth-child(7) > header > a{
+	text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
 	footer {
 		display: flex;
