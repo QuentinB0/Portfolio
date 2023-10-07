@@ -132,9 +132,12 @@ q:after {
 	content: none;
 }
 
-#gif{
-	margin-left: 10%;
+#gif > img{
+	display: flex;
+	height: 600px;
+	width: 680px;
 	margin-top: -50%;
+	margin-bottom: -50%;
 }
 
 table {
@@ -4017,7 +4020,7 @@ footer {
 
 #gif {
 	display: flex;
-	height: 600px;
+	height: auto;
 	width: 600px;
 	padding-left: 38%;
 }
