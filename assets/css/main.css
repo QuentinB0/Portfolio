@@ -132,6 +132,11 @@ q:after {
 	content: none;
 }
 
+#gif{
+	margin-left: 10%;
+	margin-top: -50%;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
