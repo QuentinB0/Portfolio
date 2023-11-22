@@ -280,7 +280,7 @@ a {
 	-ms-transition: border-bottom-color 0.25s ease-in-out;
 	transition: border-bottom-color 0.25s ease-in-out;
 	text-decoration: none;
-	color: #000000;
+	color: #191919;
 	border-bottom: dotted 1px;
 }
 
@@ -292,7 +292,7 @@ a:hover {
 strong,
 b {
 	font-weight: 600;
-	color: #000000;
+	color: #191919;
 }
 
 em,
@@ -310,7 +310,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #000000;
+	color: #191919;
 	font-family: "Raleway", Helvetica, sans-serif;
 	font-weight: 600;
 	letter-spacing: 0.175em;
@@ -4081,3 +4081,10 @@ footer {
 	}
 }
 
+#wrapper > section.intro > header > h1{
+	color: #191919;
+}
+
+#wrapper > section.intro > header > p{
+	color: #191919;
+}
