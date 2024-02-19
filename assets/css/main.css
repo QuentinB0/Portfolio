@@ -280,7 +280,7 @@ a {
 	-ms-transition: border-bottom-color 0.25s ease-in-out;
 	transition: border-bottom-color 0.25s ease-in-out;
 	text-decoration: none;
-	color: #000000;
+	color: #191919;
 	border-bottom: dotted 1px;
 }
 
@@ -292,7 +292,7 @@ a:hover {
 strong,
 b {
 	font-weight: 600;
-	color: #000000;
+	color: #191919;
 }
 
 em,
@@ -310,7 +310,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #000000;
+	color: #191919;
 	font-family: "Raleway", Helvetica, sans-serif;
 	font-weight: 600;
 	letter-spacing: 0.175em;
@@ -2474,6 +2474,7 @@ input[type="radio"]+label:before {
 
 .image img {
 	display: block;
+	border-radius: 8px;
 }
 
 .image[data-position] img {
@@ -2642,6 +2643,13 @@ input[type="radio"]+label:before {
 	width: 100%;
 }
 
+img{
+	border-radius: 6px;
+}
+
+#wrapper > section.intro > div > span > img{
+	border-radius: 0px;
+}
 /* List */
 
 ol {
@@ -4080,4 +4088,5 @@ footer {
 		margin-top: -5%;
 	}
 }
+
 
