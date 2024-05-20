@@ -4053,10 +4053,14 @@ footer {
 		display: flex;
 		justify-content: center;
 		margin-top: 5%;
-		margin-left: -200%;
 		flex-direction: row;
 	}
 	
+	#wrapper > section:nth-child(6) > footer > ul{
+		display: flex;
+		flex-direction: column;
+		margin-left: -100%;
+	}
 		#gif {
 			display: none;
 		}
