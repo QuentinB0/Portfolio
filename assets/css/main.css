@@ -4059,7 +4059,7 @@ footer {
 	#wrapper > section:nth-child(6) > footer > ul{
 		display: flex;
 		flex-direction: column;
-		margin-left: -100%;
+		margin-left: -110%;
 	}
 		#gif {
 			display: none;
