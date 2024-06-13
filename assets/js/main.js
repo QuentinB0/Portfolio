@@ -4,11 +4,7 @@
         browser = {
             canUse: function(prop) {
                 var test = document.createElement('div');
-                if (prop in test.style) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return (prop in test.style);
             },
             name: navigator.userAgent.match(/Edge\/|Trident\/|MSIE /) ? 'ie' : ''
         };
@@ -36,7 +32,7 @@
 
     // Play initial animations on page load.
     $window.on('load', function() {
-        window.setTimeout(function() {
+        setTimeout(function() {
             $body.removeClass('is-preload');
         }, 100);
     });
