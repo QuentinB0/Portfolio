@@ -2989,6 +2989,17 @@ a.arrow:before {
 	width: 3rem;
 }
 
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
 /* Gallery */
 
 @-moz-keyframes gallery-modal-spinner {
@@ -4056,10 +4067,16 @@ footer {
 		margin-top: 5%;
 		flex-direction: row;
 	}
-	
-		#gif {
-			display: none;
-		}
+
+	#wrapper>section:nth-child(6)>footer>ul {
+		display: flex;
+		flex-direction: column;
+		margin-left: -110%;
+	}
+
+	#gif {
+		display: none;
+	}
 
 	#guillaume {
 		display: flex;
@@ -4076,6 +4093,13 @@ footer {
 		margin-top: 5%;
 		flex-direction: row;
 	}
+
+	#wrapper>section:nth-child(6)>footer>ul {
+		display: flex;
+		flex-direction: column;
+		margin-left: -135%;
+	}
+
 	#gif {
 		display: none;
 	}
@@ -4087,5 +4111,3 @@ footer {
 		margin-top: -5%;
 	}
 }
-
-
