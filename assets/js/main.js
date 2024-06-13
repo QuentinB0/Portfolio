@@ -71,7 +71,7 @@
                 'background-size': 'cover',
                 'background-repeat': 'no-repeat'
             });
-            $img.css('opacity', '1'); // Show images directly
+            $img.css('opacity', '0');
         });
     } else {
         // For browsers supporting object-fit, show images directly
@@ -179,5 +179,15 @@
               $modal.addClass('loaded');
           }, 275);
       });
+
+    // Smooth image loading on scroll.
+    $window.on('scroll', function() {
+        $('.gallery > a > img').each(function() {
+            var $img = $(this);
+            if ($window.scrollTop() + $window.height() > $img.offset().top) {
+                $img.css('opacity', '1');
+            }
+        });
+    });
 
 })(jQuery);
