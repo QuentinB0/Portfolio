@@ -3079,26 +3079,28 @@ a.arrow:before {
     outline: 0;
     position: relative;
     width: calc(50% - 1.25rem);
-    transition: transform 0.3s ease-out;
 }
 
 .gallery a img {
     display: block;
-    height: auto;
-    max-width: 100%;
+    height: 25vw;
+    min-height: 18rem;
     object-fit: cover;
     object-position: center;
-    transition: transform 0.3s ease-out;
+    width: 100%;
+}
+
+.gallery a.landscape {
+    width: 100%;
 }
 
 .gallery a.landscape img {
-    height: auto;
+    height: 30vw;
     width: 100%;
 }
 
 .gallery a.portrait img {
-    height: auto;
-    max-width: 100%;
+    height: 30vw;
 }
 
 .gallery .modal {
@@ -3114,7 +3116,7 @@ a.arrow:before {
     width: 100%;
     height: 100%;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0.3s;
+    transition: opacity 0.5s ease, visibility 0.5s ease, z-index 0.5s;
 }
 
 .gallery .modal:before {
@@ -3152,7 +3154,7 @@ a.arrow:before {
 
 .gallery .modal .inner {
     transform: translateY(0.75rem);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.25s ease, transform 0.25s ease;
     opacity: 0;
 }
 
@@ -3184,22 +3186,6 @@ a.arrow:before {
     transition-delay: 0s;
     opacity: 0;
 }
-
-@media (max-width: 768px) {
-    .gallery a {
-        width: 100%;
-    }
-
-    .gallery .modal {
-        align-items: flex-start;
-        padding: 1rem;
-    }
-
-    .gallery .modal .inner {
-        transform: translateY(0);
-    }
-}
-
 
 
 
