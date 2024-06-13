@@ -4054,13 +4054,12 @@ footer {
 		display: flex;
 		justify-content: center;
 		margin-top: 5%;
-		margin-left: -200%;
 		flex-direction: row;
 	}
-
-	#gif {
-		display: none;
-	}
+	
+		#gif {
+			display: none;
+		}
 
 	#guillaume {
 		display: flex;
@@ -4075,10 +4074,8 @@ footer {
 		display: flex;
 		justify-content: center;
 		margin-top: 5%;
-		margin-left: -200%;
 		flex-direction: row;
 	}
-
 	#gif {
 		display: none;
 	}
@@ -4091,11 +4088,4 @@ footer {
 	}
 }
 
-.lazy {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
 
-.lazy-loaded {
-	opacity: 1;
-}
