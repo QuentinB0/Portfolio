@@ -2991,9 +2991,7 @@ a.arrow:before {
 
 .lazy {
     opacity: 0;
-    transition: opacity 0.3s ease;
-    max-width: 100%;
-    height: auto;
+    transition: opacity 0.5s ease;
 }
 
 .lazy.loaded {

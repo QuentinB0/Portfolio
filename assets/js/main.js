@@ -13,16 +13,26 @@
             name: navigator.userAgent.match(/Edge\/|Trident\/|MSIE /) ? 'ie' : ''
         };
 
-    // Breakpoints.
-    breakpoints({
-        default: ['1681px', null],
-        xlarge: ['1281px', '1680px'],
-        large: ['981px', '1280px'],
-        medium: ['737px', '980px'],
-        small: ['481px', '736px'],
-        xsmall: ['361px', '480px'],
-        xxsmall: [null, '360px']
-    });
+    // Function to check if element is in viewport
+    function inViewport($el) {
+        var rect = $el[0].getBoundingClientRect();
+        return (
+            rect.bottom >= 0 &&
+            rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Lazy load images with fade-in effect
+    function lazyLoadImages() {
+        $('.lazy').each(function() {
+            var $img = $(this);
+            if (inViewport($img) && !$img.hasClass('loaded')) {
+                $img.addClass('loaded');
+            }
+        });
+    }
 
     // Play initial animations on page load.
     $window.on('load', function() {
@@ -182,12 +192,10 @@
 
     // Smooth image loading on scroll.
     $window.on('scroll', function() {
-        $('.gallery > a > img').each(function() {
-            var $img = $(this);
-            if ($window.scrollTop() + $window.height() > $img.offset().top) {
-                $img.css('opacity', '1');
-            }
-        });
+        lazyLoadImages();
     });
+
+    // Initial load check
+    lazyLoadImages();
 
 })(jQuery);
