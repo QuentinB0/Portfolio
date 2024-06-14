@@ -118,6 +118,9 @@
         // Rendre la modal visible
         $modal.addClass('visible');
 
+        // Ajouter le voile blanc
+        $modal.addClass('overlay');
+
         // Mettre la modal en focus
         $modal.focus();
 
@@ -152,6 +155,7 @@
         // Délai pour rendre l'animation de fermeture plus rapide
         setTimeout(function() {
             $modal.removeClass('visible');
+            $modal.removeClass('overlay');
             // Effacer la source de l'image après que l'animation de fermeture soit terminée
             setTimeout(function() {
                 // Effacer la source de l'image
