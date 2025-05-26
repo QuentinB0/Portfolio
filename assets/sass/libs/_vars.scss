@@ -51,3 +51,17 @@
 		accent-alt:				desaturate(darken(#49fcd4, 10), 20),
 		accent-bg:				transparentize(#49fcd4, 0.75)
 	);
+
+// Dark Mode Palette.
+	$dark-palette: (
+		bg:						#121212, // Dark gray background
+		fg:						#e0e0e0, // Light gray text
+		fg-bold:				#ffffff, // White bold text
+		fg-light:				rgba(224,224,224,0.25), // Lighter gray for secondary text
+		border:					rgba(224,224,224,0.25), // Light gray border
+		border-bg:				rgba(224,224,224,0.1), // Lighter gray border background
+		accent:					#7f5af0, // Purple accent
+		accent-border:			desaturate(darken(#7f5af0, 8), 30),
+		accent-alt:				desaturate(darken(#7f5af0, 10), 20),
+		accent-bg:				transparentize(#7f5af0, 0.75)
+	);
