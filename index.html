@@ -302,11 +302,11 @@
 						<h3>Email</h3>
 						<a href="mailto:quentinbaratpro@gmail.com">quentinbaratpro@gmail.com</a>
 					</li>
-					{# <li>
+					<!-- <li>
 						<h3>Téléphone</h3>
 						<a href="tel:"></a>
-					</li> #}
-					<!-- <li>
+					</li> 
+					 <li>
 									<h3>Address</h3>
 									<span>1234 Somewhere Road, Nashville, TN 00000</span>
 								</li> -->
@@ -338,47 +338,47 @@
 
 			<script>
 				document.addEventListener('DOMContentLoaded', function () {
-    // Lazy loading images
-    const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+					// Lazy loading images
+					const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 
-    if ('IntersectionObserver' in window) {
-        let lazyImageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.srcSet = lazyImage.dataset.srcSet || '';
-                    lazyImage.classList.remove('lazy');
-                    lazyImageObserver.unobserve(lazyImage);
-                }
-            });
-        }, {
-            rootMargin: '0px 0px',
-            threshold: 0.1
-        });
+					if ('IntersectionObserver' in window) {
+						let lazyImageObserver = new IntersectionObserver((entries, observer) => {
+							entries.forEach((entry) => {
+								if (entry.isIntersecting) {
+									const lazyImage = entry.target;
+									lazyImage.src = lazyImage.dataset.src;
+									lazyImage.srcSet = lazyImage.dataset.srcSet || '';
+									lazyImage.classList.remove('lazy');
+									lazyImageObserver.unobserve(lazyImage);
+								}
+							});
+						}, {
+							rootMargin: '0px 0px',
+							threshold: 0.1
+						});
 
-        lazyImages.forEach((lazyImage) => {
-            lazyImageObserver.observe(lazyImage);
-        });
-    } else {
-        // Fallback for browsers without IntersectionObserver
-        const loadImage = (img) => {
-            img.src = img.dataset.src;
-            img.srcSet = img.dataset.srcSet || '';
-            img.classList.remove('lazy');
-        };
+						lazyImages.forEach((lazyImage) => {
+							lazyImageObserver.observe(lazyImage);
+						});
+					} else {
+						// Fallback for browsers without IntersectionObserver
+						const loadImage = (img) => {
+							img.src = img.dataset.src;
+							img.srcSet = img.dataset.srcSet || '';
+							img.classList.remove('lazy');
+						};
 
-        const lazyLoad = () => {
-            if (lazyImages.length === 0) return;
-            requestIdleCallback(() => {
-                loadImage(lazyImages.shift());
-                lazyLoad();
-            });
-        };
+						const lazyLoad = () => {
+							if (lazyImages.length === 0) return;
+							requestIdleCallback(() => {
+								loadImage(lazyImages.shift());
+								lazyLoad();
+							});
+						};
 
-        lazyLoad();
-    }
-});
+						lazyLoad();
+					}
+				});
 			</script>
 
 </body>
