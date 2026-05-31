@@ -4054,7 +4054,7 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1700px) {
 	footer {
 		display: flex;
 		justify-content: flex-start;
