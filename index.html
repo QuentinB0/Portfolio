@@ -1,12 +1,24 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
 
 <head>
 	<title>Quentin Barat Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="description"
+		content="Portfolio de Quentin Barat, développeur web fullstack basé à Lyon. Projets HTML/CSS, JavaScript, VueJs, PHP, Symfony et bases de données." />
+	<!-- Open Graph -->
+	<meta property="og:title" content="Quentin Barat – Portfolio développeur web" />
+	<meta property="og:description"
+		content="Portfolio de Quentin Barat, développeur web fullstack basé à Lyon. Projets HTML/CSS, JavaScript, VueJs, PHP, Symfony et bases de données." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="./images/IMG_2661.webp" />
+	<meta property="og:locale" content="fr_FR" />
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Quentin Barat – Portfolio développeur web" />
+	<meta name="twitter:description" content="Portfolio de Quentin Barat, développeur web fullstack basé à Lyon." />
+	<meta name="twitter:image" content="./images/IMG_2661.webp" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -33,15 +45,16 @@
 			<header>
 				<h1>Quentin Barat</h1>
 				<p>Un portfolio de présentation <a
-						href="https://fr.linkedin.com/in/quentin-barat-210020255?trk=people-guest_people_search-card">LinkedIn</a>
-					/ <a href="https://github.com/QuentinB0">GITHUB</a></p>
+						href="https://fr.linkedin.com/in/quentin-barat-210020255?trk=people-guest_people_search-card"
+						rel="noopener noreferrer" target="_blank">LinkedIn</a>
+					/ <a href="https://github.com/QuentinB0" rel="noopener noreferrer" target="_blank">GITHUB</a></p>
 				<ul class="actions">
 					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 				</ul>
 			</header>
 			<div class="content">
 				<span class="image fill" data-position="center"><img data-src="./images/IMG_2661.webp"
-						alt="Photo de Quentin Barat" class="lazy" /></span>
+						alt="Photo de Quentin Barat" class="lazy" loading="lazy" /></span>
 			</div>
 		</section>
 
@@ -51,16 +64,16 @@
 				<h2>Présentation</h2>
 			</header>
 			<div class="content">
-				<p>Bonjour, je m'appelle <strong>Quentin Barat</strong> et j'ai <strong>28 ans</strong>, je viens de
-					valider une formation de <strong>développeur web</strong> à Lyon niveau <strong>BAC+2</strong> ainsi
-					qu'une autre formation de Concepteur Développeur d'Applications niveau BAC+3.
+				<p>Bonjour, je m'appelle <strong>Quentin Barat</strong> et j'ai <strong id="age"></strong>
+					<strong>ans</strong>, développeur web fullstack.
 					Anciennement chauffeur poids-lourds en <strong>Bretagne</strong>, j'ai décidé de réaliser un
-					virage
-					à 180° pour m'orienter vers un métier qui me plaît et <strong>je me donne à fond dans cette
-						reconversion</strong>. Actuellement en poste chez Absys Cyborg, je pense avoir trouvé ma place
-					et avoir accompli une reconversion réussie.</p>
+					virage à 180° pour m'orienter vers un métier qui me plaît et <strong>je me donne à fond dans cette
+						reconversion</strong>. Actuellement en poste chez <strong>Absys Cyborg</strong>, je pense avoir
+					trouvé ma place
+					et avoir accompli une reconversion réussie.
+				</p>
 				<span class="image main"><img data-src="./images/WhatsApp Image 2023-03-13 à 13.11.40.webp"
-						alt="Paysage en Bretagne" class="lazy" /></span>
+						alt="Paysage en Bretagne" class="lazy" loading="lazy" /></span>
 				<figcaption id="guillaume">&copy Guillaume Barat</figcaption>
 			</div>
 		</section>
@@ -105,14 +118,20 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/logogroup.webp" class="portrait"><img data-src="./images/logogroup.webp"
-									alt="Premier exemple HTML/CSS" class="lazy" /></a>
-							<a href="./images/Capture d'écran 2023-03-10 203925.webp" class="portrait"><img
+							<a href="./images/logogroup.webp" class="portrait"
+								aria-label="Voir le logo du projet HTML/CSS"><img data-src="./images/logogroup.webp"
+									alt="Logo du projet de site de location de véhicules" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/Capture d'écran 2023-03-10 203925.webp" class="portrait"
+								aria-label="Voir la page d'accueil du projet HTML/CSS"><img
 									data-src="./images/Capture d'écran 2023-03-10 203925.webp"
-									alt="Second exemple HTML/CSS" class="lazy" /></a>
-							<a href="./images/Capture_decran_15.webp" class="landscape"><img
+									alt="Page d'accueil du site de location de véhicules" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/Capture_decran_15.webp" class="landscape"
+								aria-label="Voir une page intérieure du projet HTML/CSS"><img
 									data-src="./images/Capture_decran_15.webp" id="premiere"
-									alt="Troisième exemple HTML/CSS" class="lazy" /></a>
+									alt="Page intérieure du site de location de véhicules" class="lazy"
+									loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -126,15 +145,15 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/1674858138757.webp" class="landscape"><img
-									data-src="./images/1674858138757.webp" alt="Premier exemple maquettage"
-									class="lazy" /></a>
-							<a href="./images/1674858138556.webp" class="portrait"><img
-									data-src="./images/1674858138556.webp" alt="Second exemple maquettage"
-									class="lazy" /></a>
-							<a href="./images/1674858138244.webp" class="portrait"><img
-									data-src="./images/1674858138244.webp" id="premiere"
-									alt="Troisième exemple maquettage" class="lazy" /></a>
+							<a href="./images/1674858138757.webp" class="landscape"
+								aria-label="Voir la maquette vue desktop"><img data-src="./images/1674858138757.webp"
+									alt="Maquette vue desktop" class="lazy" loading="lazy" /></a>
+							<a href="./images/1674858138556.webp" class="portrait"
+								aria-label="Voir la maquette vue tablette"><img data-src="./images/1674858138556.webp"
+									alt="Maquette vue tablette" class="lazy" loading="lazy" /></a>
+							<a href="./images/1674858138244.webp" class="portrait"
+								aria-label="Voir la maquette vue mobile"><img data-src="./images/1674858138244.webp"
+									id="premiere" alt="Maquette vue mobile" class="lazy" loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -151,15 +170,19 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/Capture d'écran 2023-03-10 204306.webp" class="landscape"><img
+							<a href="./images/Capture d'écran 2023-03-10 204306.webp" class="landscape"
+								aria-label="Voir l'application discographie VueJS"><img
 									data-src="./images/Capture d'écran 2023-03-10 204306.webp"
-									alt="Premier exemple JS/VueJS" class="lazy" /></a>
-							<a href="./images/Capture d'écran 2023-03-10 205139.webp"><img
+									alt="Application discographie avec filtres et tri en VueJS" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/Capture d'écran 2023-03-10 205139.webp"
+								aria-label="Voir l'application liste de séries VueJS"><img
 									data-src="./images/Capture d'écran 2023-03-10 205139.webp"
-									alt="Second exemple JS/VueJS" class="lazy" /></a>
-							<a href="./images/Capture d'écran 2023-03-10 205809.webp"><img
+									alt="Application liste de séries en VueJS" class="lazy" loading="lazy" /></a>
+							<a href="./images/Capture d'écran 2023-03-10 205809.webp"
+								aria-label="Voir le jeu Motus en JavaScript"><img
 									data-src="./images/Capture d'écran 2023-03-10 205809.webp"
-									alt="Troisième exemple JS/VueJS" class="lazy" /></a>
+									alt="Jeu Motus en JavaScript" class="lazy" loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -174,13 +197,16 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/2023-01-20_03-TEST_FAUX_ECF_page-0001.webp" class="portrait"><img
+							<a href="./images/2023-01-20_03-TEST_FAUX_ECF_page-0001.webp" class="portrait"
+								aria-label="Voir le schéma de base de données MCD"><img
 									data-src="./images/2023-01-20_03-TEST_FAUX_ECF_page-0001.webp"
-									alt="Premier exemple base de données" class="lazy" /></a>
-							<a href="./images/2023-01-26_01-MySQL Workbench.webp" class="portrait"><img
+									alt="Schéma MCD de base de données pour la gestion du personnel et des produits"
+									class="lazy" loading="lazy" /></a>
+							<a href="./images/2023-01-26_01-MySQL Workbench.webp" class="portrait"
+								aria-label="Voir le schéma MySQL Workbench"><img
 									data-src="./images/2023-01-26_01-MySQL Workbench.webp"
-									alt="Second exemple base de données" class="lazy" /></a>
-							<!-- <a href="./images/gallery/fulls/10.webp" class="landscape"><img src="./images/gallery/thumbs/10.webp" alt="" /></a> -->
+									alt="Modélisation de base de données sous MySQL Workbench" class="lazy"
+									loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -194,14 +220,19 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/Capture d’écran 2023-03-13 101832.webp" class="portrait"><img
-									data-src="./images/Capture d’écran 2023-03-13 101832.webp" alt="Premier exemple PHP"
-									class="lazy" /></a>
-							<a href="./images/Capture d’écran 2023-03-13 104700.webp" class="portrait"><img
-									data-src="./images/Capture d’écran 2023-03-13 104700.webp" alt="Second exemple PHP"
-									class="lazy" /></a>
-							<a href="./images/mdp.webp" class="landscape"><img data-src="./images/mdp.webp"
-									alt="Troisième exemple PHP" class="lazy" /></a>
+							<a href="./images/Capture d'écran 2023-03-13 101832.webp" class="portrait"
+								aria-label="Voir l'interface utilisateur de la machine à café PHP"><img
+									data-src="./images/Capture d'écran 2023-03-13 101832.webp"
+									alt="Interface utilisateur de la machine à café en PHP" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/Capture d'écran 2023-03-13 104700.webp" class="portrait"
+								aria-label="Voir l'interface admin de la machine à café PHP"><img
+									data-src="./images/Capture d'écran 2023-03-13 104700.webp"
+									alt="Interface administrateur de gestion des boissons en PHP" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/mdp.webp" class="landscape"
+								aria-label="Voir la page de connexion admin PHP"><img data-src="./images/mdp.webp"
+									alt="Page de connexion administrateur" class="lazy" loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -218,12 +249,15 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/iphone.webp" class="portrait"><img data-src="./images/iphone.webp"
-									alt="Premier exemple IZI Blog" class="lazy" /></a>
-							<a href="./images/ipad.webp" class="portrait"><img data-src="./images/ipad.webp"
-									alt="Second exemple IZI Blog" class="lazy" /></a>
-							<a href="./images/macbook.webp" class="landscape"><img data-src="./images/macbook.webp"
-									alt="Troisième exemple IZI Blog" class="lazy" /></a>
+							<a href="./images/iphone.webp" class="portrait" aria-label="Voir IZI Blog sur iPhone"><img
+									data-src="./images/iphone.webp" alt="IZI Blog affiché sur iPhone" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/ipad.webp" class="portrait" aria-label="Voir IZI Blog sur iPad"><img
+									data-src="./images/ipad.webp" alt="IZI Blog affiché sur iPad" class="lazy"
+									loading="lazy" /></a>
+							<a href="./images/macbook.webp" class="landscape"
+								aria-label="Voir IZI Blog sur MacBook"><img data-src="./images/macbook.webp"
+									alt="IZI Blog affiché sur MacBook" class="lazy" loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -239,15 +273,17 @@
 					</header>
 					<div class="content">
 						<div class="gallery">
-							<a href="./images/iziscraphome.webp" class="landscape"><img
-									data-src="./images/iziscraphome.webp" alt="Premier exemple IZI Scrap"
-									class="lazy" /></a>
-							<a href="./images/iziscraplogin.webp" class="portrait"><img
-									data-src="./images/iziscraplogin.webp" alt="Second exemple IZI Blog"
-									class="lazy" /></a>
-							<a href="./images/iziscrapregistration.webp" class="portrait"><img
-									data-src="./images/iziscrapregistration.webp" alt="Troisième exemple IZI Blog"
-									class="lazy" /></a>
+							<a href="./images/iziscraphome.webp" class="landscape"
+								aria-label="Voir la page d'accueil IZI Scrap"><img data-src="./images/iziscraphome.webp"
+									alt="Page d'accueil de IZI Scrap" class="lazy" loading="lazy" /></a>
+							<a href="./images/iziscraplogin.webp" class="portrait"
+								aria-label="Voir la page de connexion IZI Scrap"><img
+									data-src="./images/iziscraplogin.webp" alt="Page de connexion de IZI Scrap"
+									class="lazy" loading="lazy" /></a>
+							<a href="./images/iziscrapregistration.webp" class="portrait"
+								aria-label="Voir la page d'inscription IZI Scrap"><img
+									data-src="./images/iziscrapregistration.webp" alt="Page d'inscription de IZI Scrap"
+									class="lazy" loading="lazy" /></a>
 						</div>
 					</div>
 				</section>
@@ -263,11 +299,11 @@
 			<div class="content">
 				<p>Vous pouvez retrouver mes différents projets avec des détails supplémentaires ci-dessous.</p>
 				<ul class="actions">
-					<li><a href="https://github.com/QuentinB0" class="button primary large" id="projets">Les projets</a>
+					<li><a href="https://github.com/QuentinB0" class="button primary large" id="projets"
+							rel="noopener noreferrer" target="_blank">Les projets</a>
 					</li>
-					<li><a onclick="window.location.href='CV.pdf'" class="button large" id="contact"
-							target="_blank">Afficher mon
-							CV</a></li>
+					<li><a href="CV.pdf" class="button large" id="contact" target="_blank"
+							rel="noopener noreferrer">Afficher mon CV</a></li>
 				</ul>
 			</div>
 		</section>
@@ -277,109 +313,93 @@
 				<h2>Entrons en contact</h2>
 			</header>
 
-			<!-- <div class="content">
-							<p><strong>Formulaire de contact :</strong></p>
-							<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Nom-Prénom" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Envoyer un message" class="button primary" /></li>
-								</ul>
-							</form>
-						</div> -->
 			<footer>
 				<ul class="items">
 					<li>
 						<h3>Email</h3>
 						<a href="mailto:quentinbaratpro@gmail.com">quentinbaratpro@gmail.com</a>
 					</li>
-					<!-- <li>
-						<h3>Téléphone</h3>
-						<a href="tel:"></a>
-					</li> 
-					 <li>
-									<h3>Address</h3>
-									<span>1234 Somewhere Road, Nashville, TN 00000</span>
-								</li> -->
 					<li>
 						<h3>Mes réseaux</h3>
 						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 							<li><a href="https://fr.linkedin.com/in/quentin-barat-210020255?trk=people-guest_people_search-card"
-									class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/QuentinB0" class="icon brands fa-github"><span
-										class="label">GitHub</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li> -->
+									class="icon brands fa-linkedin-in" rel="noopener noreferrer" target="_blank"><span
+										class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/QuentinB0" class="icon brands fa-github"
+									rel="noopener noreferrer" target="_blank"><span class="label">GitHub</span></a></li>
 						</ul>
 					</li>
 				</ul>
-				<div id="gif"><img data-src="images/giphy.gif" alt="GIF rigolo de chat cassant un ordinateur"
-						class="lazy"></div>
+				<div id="gif">
+					<video autoplay loop muted playsinline aria-label="Animation d'un chat cassant un ordinateur">
+						<source src="images/giphy.webm" type="video/webm" />
+						<source src="images/giphy.mp4" type="video/mp4" />
+					</video>
+				</div>
 			</footer>
+		</section>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
 
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-					// Lazy loading images
-					const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
-
-					if ('IntersectionObserver' in window) {
-						let lazyImageObserver = new IntersectionObserver((entries, observer) => {
-							entries.forEach((entry) => {
-								if (entry.isIntersecting) {
-									const lazyImage = entry.target;
-									lazyImage.src = lazyImage.dataset.src;
-									lazyImage.srcSet = lazyImage.dataset.srcSet || '';
-									lazyImage.classList.remove('lazy');
-									lazyImageObserver.unobserve(lazyImage);
-								}
-							});
-						}, {
-							rootMargin: '0px 0px',
-							threshold: 0.1
+				if ('IntersectionObserver' in window) {
+					let lazyImageObserver = new IntersectionObserver((entries, observer) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const lazyImage = entry.target;
+								lazyImage.src = lazyImage.dataset.src;
+								lazyImage.srcSet = lazyImage.dataset.srcSet || '';
+								lazyImage.classList.remove('lazy');
+								lazyImageObserver.unobserve(lazyImage);
+							}
 						});
+					}, {
+						rootMargin: '0px 0px',
+						threshold: 0.1
+					});
 
-						lazyImages.forEach((lazyImage) => {
-							lazyImageObserver.observe(lazyImage);
+					lazyImages.forEach((lazyImage) => {
+						lazyImageObserver.observe(lazyImage);
+					});
+				} else {
+					const loadImage = (img) => {
+						img.src = img.dataset.src;
+						img.srcSet = img.dataset.srcSet || '';
+						img.classList.remove('lazy');
+					};
+
+					const lazyLoad = () => {
+						if (lazyImages.length === 0) return;
+						requestIdleCallback(() => {
+							loadImage(lazyImages.shift());
+							lazyLoad();
 						});
-					} else {
-						// Fallback for browsers without IntersectionObserver
-						const loadImage = (img) => {
-							img.src = img.dataset.src;
-							img.srcSet = img.dataset.srcSet || '';
-							img.classList.remove('lazy');
-						};
+					};
 
-						const lazyLoad = () => {
-							if (lazyImages.length === 0) return;
-							requestIdleCallback(() => {
-								loadImage(lazyImages.shift());
-								lazyLoad();
-							});
-						};
-
-						lazyLoad();
-					}
-				});
-			</script>
+					lazyLoad();
+				}
+			});
+		</script>
+		<script>
+			(function () {
+				const encoded = "MTEvMDMvMTk5Nw==";
+				const parts = atob(encoded).split("/");
+				const dob = new Date(+parts[2], +parts[1] - 1, +parts[0]);
+				const today = new Date();
+				let age = today.getFullYear() - dob.getFullYear();
+				const m = today.getMonth() - dob.getMonth();
+				if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
+				document.getElementById("age").textContent = age;
+			})();
+		</script>
 
 </body>
 

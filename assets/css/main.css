@@ -132,12 +132,13 @@ q:after {
 	content: none;
 }
 
-#gif>img {
-	display: flex;
-	height: 600px;
-	width: 680px;
-	margin-top: -50%;
-	margin-bottom: -50%;
+#gif > img,
+#gif > video {
+    display: flex;
+    height: 600px;
+    width: 680px;
+    margin-top: -50%;
+    margin-bottom: -50%;
 }
 
 table {
@@ -4003,6 +4004,15 @@ footer {
 	height: auto;
 	width: 600px;
 	padding-left: 38%;
+}
+
+#gif > img,
+#gif > video {
+    display: flex;
+    height: 600px;
+    width: 680px;
+    margin-top: -50%;
+    margin-bottom: -50%;
 }
 
 #projets {
