@@ -4001,18 +4001,20 @@ footer {
 
 #gif {
 	display: flex;
-	height: auto;
-	width: 600px;
-	padding-left: 38%;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
 #gif > img,
 #gif > video {
-    display: flex;
-    height: 600px;
-    width: 680px;
-    margin-top: -50%;
-    margin-bottom: -50%;
+	width: 100%;
+	height: 100%;
+	max-width: 680px;
+	object-fit: contain;
+	margin: 0;
 }
 
 #projets {
@@ -4044,10 +4046,6 @@ footer {
 		margin-left: -110%;
 	}
 
-	#gif {
-		display: none;
-	}
-
 	#guillaume {
 		display: flex;
 		justify-content: center;
@@ -4056,22 +4054,20 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1150px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
 	footer {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		margin-top: 5%;
-		flex-direction: row;
+		flex-direction: column;
+		padding-left: 0;
 	}
 
 	#wrapper>section:nth-child(6)>footer>ul {
 		display: flex;
 		flex-direction: column;
-		margin-left: -135%;
-	}
-
-	#gif {
-		display: none;
+		margin-left:0;
+		padding-left: 0;
 	}
 
 	#guillaume {
