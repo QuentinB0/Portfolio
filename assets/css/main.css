@@ -3940,6 +3940,9 @@ body.is-preload #wrapper>section.intro>.content {
 	transform: translateY(-1rem);
 }
 
+#gif{
+	display: none;
+}
 @media screen and (max-width: 1280px) {
 
 	#wrapper>section.intro>header>* {
