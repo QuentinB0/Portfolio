@@ -4040,13 +4040,24 @@ footer {
 		display: flex;
 		justify-content: center;
 		margin-top: 5%;
-		flex-direction: row;
+		flex-direction: column;
+		padding-left: 0;
 	}
 
 	#wrapper>section:nth-child(6)>footer>ul {
 		display: flex;
 		flex-direction: column;
-		margin-left: -110%;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	#gif {
+		order: 1;
+	}
+
+	#gif > img,
+	#gif > video {
+		max-width: 100%;
 	}
 
 	#guillaume {
@@ -4054,6 +4065,15 @@ footer {
 		justify-content: center;
 		margin-top: -7%;
 		margin-bottom: -25%;
+	}
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+	#wrapper>section:nth-child(6) {
+		grid-template-areas:
+			"header"
+			"footer"
+			"content";
 	}
 }
 
