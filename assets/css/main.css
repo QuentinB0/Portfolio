@@ -4077,6 +4077,15 @@ footer {
 	}
 }
 
+@media only screen and (min-width: 768px) and (max-width : 932px) and (orientation: landscape) {
+	#wrapper>section:nth-child(6) {
+		grid-template-areas:
+			"header"
+			"footer"
+			"content";
+	}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 	footer {
 		display: flex;
